@@ -1,3 +1,22 @@
-<h1>
-  {{title}}
-</h1>
+<md-toolbar color="primary">
+  <h2>
+    Généalogie Bonnier
+  </h2>
+  <span class="spacer"></span>
+  <button md-mini-fab (click)="onDownloadClicked()"><i class="material-icons">file_download</i></button>
+</md-toolbar>
+
+<div id="flex-container">
+  <app-zoomable-image></app-zoomable-image>
+
+  <md-card id="explication">
+    <md-card-title>Qu'est ce que je vois ?</md-card-title>
+    <md-card-content>
+      <p>Ce dessin a été réalisé par un des frères de Noëlle BARRAL. Je ne sais pas lequel.</p>
+      <p>Il représente notre arbre généalogique ainsi que les faits marquants que nos ancêtres on dû lire dans les
+        gazettes.</p>
+      <p>L'original est chez moi, et je le rapporterai à Limoux chez Mamie la prochaine fois que j'irai (sans doute cet
+        été).</p>
+    </md-card-content>
+  </md-card>
+</div>
