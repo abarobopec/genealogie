@@ -7,12 +7,14 @@ import {MaterialModule, MdMenuModule, MdButtonModule, MdDialogModule} from '@ang
 import { AppComponent } from './app.component';
 import { ZoomableImageComponent } from './zoomable-image/zoomable-image.component';
 import { DownloadDialogComponent } from './download-dialog/download-dialog.component';
+import { ExplainDialogComponent } from './explain-dialog/explain-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ZoomableImageComponent,
-    DownloadDialogComponent
+    DownloadDialogComponent,
+    ExplainDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,7 @@ import { DownloadDialogComponent } from './download-dialog/download-dialog.compo
     MdDialogModule
   ],
   providers: [],
-  entryComponents: [DownloadDialogComponent],
+  entryComponents: [DownloadDialogComponent, ExplainDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
